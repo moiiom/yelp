@@ -1,0 +1,1430 @@
+/home/jason/workspace/yelp/yelp/spiders/yelpspider.py:8: ScrapyDeprecationWarning: Module `scrapy.contrib.spiders` is deprecated, use `scrapy.spiders` instead
+  from scrapy.contrib.spiders import CrawlSpider
+2016-08-01 18:30:19 [scrapy] INFO: Scrapy 1.1.0 started (bot: yelp)
+2016-08-01 18:30:19 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'yelp.spiders', 'DEPTH_LIMIT': 3, 'SPIDER_MODULES': ['yelp.spiders'], 'BOT_NAME': 'yelp', 'DOWNLOAD_TIMEOUT': 10, 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 2}
+2016-08-01 18:30:19 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-08-01 18:30:20 [py.warnings] WARNING: /usr/local/lib/python2.7/dist-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2016-08-01 18:30:20 [py.warnings] WARNING: /home/jason/workspace/yelp/yelp/middlewares.py:4: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy import log
+
+2016-08-01 18:30:20 [py.warnings] WARNING: /home/jason/workspace/yelp/yelp/middlewares.py:5: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.useragent` is deprecated, use `scrapy.downloadermiddlewares.useragent` instead
+  from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
+
+2016-08-01 18:30:20 [py.warnings] WARNING: /home/jason/workspace/yelp/yelp/middlewares.py:6: ScrapyDeprecationWarning: Module `scrapy.contrib.downloadermiddleware.defaultheaders` is deprecated, use `scrapy.downloadermiddlewares.defaultheaders` instead
+  from scrapy.contrib.downloadermiddleware.defaultheaders import DefaultHeadersMiddleware
+
+2016-08-01 18:30:20 [scrapy] INFO: Enabled downloader middlewares:
+['yelp.middlewares.MyHttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'yelp.middlewares.MyUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-08-01 18:30:20 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-08-01 18:30:20 [scrapy] INFO: Enabled item pipelines:
+['yelp.pipelines.YelpPipeline']
+2016-08-01 18:30:20 [scrapy] INFO: Spider opened
+2016-08-01 18:30:20 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-01 18:30:20 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-08-01 18:30:20 [py.warnings] WARNING: /home/jason/workspace/yelp/yelp/middlewares.py:34: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  log.msg('start fetch proxy ips...', level=log.INFO)
+
+2016-08-01 18:30:20 [scrapy] INFO: start fetch proxy ips...
+2016-08-01 18:30:20 [yelp.fetch_free_proxyes] INFO: fetch proxy ip from xici...
+2016-08-01 18:30:21 [yelp.fetch_free_proxyes] INFO: checking proxyes validation,total:725
+2016-08-01 18:30:21 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:21 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:22 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:22 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:23 [yelp.fetch_free_proxyes] INFO: +++Check Success(1/50):125.111.171.158:8118
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/25):1
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(1/50):1
+2016-08-01 18:30:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:26 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:27 [yelp.fetch_free_proxyes] INFO: +++Check Success(2/50):77.251.233.243:80
+2016-08-01 18:30:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/25):2
+2016-08-01 18:30:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:28 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:28 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:28 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(2/50):2
+2016-08-01 18:30:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:29 [yelp.fetch_free_proxyes] INFO: +++Check Success(3/50):80.242.171.23:8888
+2016-08-01 18:30:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/50):3
+2016-08-01 18:30:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(3/25):3
+2016-08-01 18:30:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:32 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:32 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:32 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:32 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/25):4
+2016-08-01 18:30:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(4/50):4
+2016-08-01 18:30:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:34 [yelp.fetch_free_proxyes] INFO: +++Check Success(6/50):1.207.222.83:80
+2016-08-01 18:30:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:35 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:35 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:35 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:35 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:35 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/50):5
+2016-08-01 18:30:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(5/25):5
+2016-08-01 18:30:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:38 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:38 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:38 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:38 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:38 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:38 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:38 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:39 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:39 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/50):6
+2016-08-01 18:30:39 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:40 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:40 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:40 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:40 [yelp.fetch_free_proxyes] INFO: ---Check Failure(6/25):6
+2016-08-01 18:30:40 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:40 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:40 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:41 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:41 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:41 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:41 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/50):7
+2016-08-01 18:30:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:43 [yelp.fetch_free_proxyes] INFO: +++Check Success(9/50):128.199.78.87:60000
+2016-08-01 18:30:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(7/25):7
+2016-08-01 18:30:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:44 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:44 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:44 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:44 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:30:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/50):8
+2016-08-01 18:30:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:30:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(8/25):8
+2016-08-01 18:30:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:47 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:47 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:47 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:47 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:48 [yelp.fetch_free_proxyes] INFO: +++Check Success(12/50):54.169.237.120:80
+2016-08-01 18:30:48 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:48 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:30:48 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:30:48 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/50):9
+2016-08-01 18:30:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:30:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:49 [yelp.fetch_free_proxyes] INFO: +++Check Success(11/50):182.253.201.77:10000
+2016-08-01 18:30:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:30:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:30:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(9/25):9
+2016-08-01 18:30:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:30:50 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:50 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:30:50 [yelp.fetch_free_proxyes] INFO: +++Check Success(10/50):125.135.179.153:8080
+2016-08-01 18:30:51 [yelp.fetch_free_proxyes] INFO: +++Check Success(16/50):182.37.6.9:8118
+2016-08-01 18:30:51 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:30:51 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:30:51 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:30:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:30:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:30:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/25):10
+2016-08-01 18:30:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:30:53 [yelp.fetch_free_proxyes] INFO: ---Check Failure(10/50):10
+2016-08-01 18:30:53 [yelp.fetch_free_proxyes] INFO: +++Check Success(15/50):45.115.173.94:80
+2016-08-01 18:30:53 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:53 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:30:53 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:54 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:30:54 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:30:54 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/50):11
+2016-08-01 18:30:54 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:30:54 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:30:54 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:30:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:30:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(11/25):11
+2016-08-01 18:30:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:30:56 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:30:56 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:30:56 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:56 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:30:56 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:57 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:30:57 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:30:57 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:30:57 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:30:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:30:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:30:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:30:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:30:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/50):12
+2016-08-01 18:30:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:30:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:30:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(12/25):12
+2016-08-01 18:30:59 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:30:59 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:30:59 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:30:59 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:30:59 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:30:59 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:31:00 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:00 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:31:00 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:31:00 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:31:00 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:31:00 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:00 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:00 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:31:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:31:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/50):13
+2016-08-01 18:31:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:31:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:31:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(13/25):13
+2016-08-01 18:31:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:31:02 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:31:02 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:31:02 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:31:02 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:31:02 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:31:03 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:03 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:03 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:03 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:03 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:03 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:03 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:31:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:31:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/50):14
+2016-08-01 18:31:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:31:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(14/25):14
+2016-08-01 18:31:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:31:05 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:05 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:31:05 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:31:05 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:31:05 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:31:06 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:06 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:06 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:06 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:31:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:31:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:31:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:31:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/50):15
+2016-08-01 18:31:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:31:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(15/25):15
+2016-08-01 18:31:08 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:31:08 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:08 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:08 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:31:08 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:31:08 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:09 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:09 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:09 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:09 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:09 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:10 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:10 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:10 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:10 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/50):16
+2016-08-01 18:31:10 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:10 [yelp.fetch_free_proxyes] INFO: ---Check Failure(16/25):16
+2016-08-01 18:31:11 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:31:11 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:11 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:11 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:31:11 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:11 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:31:11 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:12 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:31:12 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:12 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:12 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:12 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:12 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:13 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:13 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:13 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:13 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:13 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/50):17
+2016-08-01 18:31:13 [yelp.fetch_free_proxyes] INFO: ---Check Failure(17/25):17
+2016-08-01 18:31:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/25):18
+2016-08-01 18:31:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:15 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:31:15 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/25):19
+2016-08-01 18:31:15 [yelp.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-01 18:31:15 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:15 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:15 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:15 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:15 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:16 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:16 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:16 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:16 [yelp.fetch_free_proxyes] INFO: ---Check Failure(18/50):18
+2016-08-01 18:31:17 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:17 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:17 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/25):20
+2016-08-01 18:31:17 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:17 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:17 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:17 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:18 [yelp.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-01 18:31:18 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:18 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:18 [yelp.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-01 18:31:18 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:19 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:19 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:19 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:19 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:19 [yelp.fetch_free_proxyes] INFO: ---Check Failure(19/50):19
+2016-08-01 18:31:19 [yelp.fetch_free_proxyes] INFO: ---Check Failure(20/50):20
+2016-08-01 18:31:20 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:20 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/25):21
+2016-08-01 18:31:20 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:20 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:20 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:20 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:21 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:21 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:21 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:21 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:21 [yelp.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-01 18:31:22 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:22 [yelp.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-01 18:31:22 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:22 [yelp.fetch_free_proxyes] INFO: ---Check Failure(21/50):21
+2016-08-01 18:31:23 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:23 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/25):22
+2016-08-01 18:31:23 [yelp.fetch_free_proxyes] INFO: +++Check Success(34/50):221.237.123.14:8118
+2016-08-01 18:31:23 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:23 [yelp.fetch_free_proxyes] INFO: +++Check Success(28/50):92.50.158.22:80
+2016-08-01 18:31:23 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:23 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:23 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:23 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-01 18:31:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(22/50):22
+2016-08-01 18:31:26 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/25):23
+2016-08-01 18:31:26 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:26 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/25):24
+2016-08-01 18:31:26 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:26 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:26 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:26 [yelp.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-01 18:31:26 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:28 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:28 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:28 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:28 [yelp.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-01 18:31:28 [yelp.fetch_free_proxyes] INFO: ---Check Failure(23/50):23
+2016-08-01 18:31:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:31:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/25):25
+2016-08-01 18:31:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:29 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-01 18:31:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-01 18:31:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-01 18:31:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(24/50):24
+2016-08-01 18:31:32 [yelp.fetch_free_proxyes] INFO: ---Check Failure(25/50):25
+2016-08-01 18:31:32 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:31:32 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:32 [yelp.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-01 18:31:32 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:32 [yelp.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-01 18:31:33 [yelp.fetch_free_proxyes] INFO: +++Check Success(29/50):186.229.25.114:80
+2016-08-01 18:31:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:31:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-01 18:31:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:35 [yelp.fetch_free_proxyes] INFO: ---Check Failure(26/50):26
+2016-08-01 18:31:35 [yelp.fetch_free_proxyes] INFO: +++Check Success(28/50):184.49.237.6:8080
+2016-08-01 18:31:35 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:31:35 [yelp.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-01 18:31:35 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:35 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-01 18:31:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:31:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-01 18:31:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:38 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:38 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:31:38 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:38 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:38 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:39 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:39 [yelp.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-01 18:31:39 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:39 [yelp.fetch_free_proxyes] INFO: ---Check Failure(27/50):27
+2016-08-01 18:31:39 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:31:39 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:40 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:40 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:40 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:40 [yelp.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-01 18:31:41 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:41 [yelp.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-01 18:31:41 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:41 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:31:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:31:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(28/50):28
+2016-08-01 18:31:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:31:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:31:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-01 18:31:42 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:31:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:43 [yelp.fetch_free_proxyes] INFO: +++Check Success(32/50):182.53.247.164:8080
+2016-08-01 18:31:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-01 18:31:43 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:31:44 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:44 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:31:44 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:31:44 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:31:44 [yelp.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-01 18:31:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:31:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(29/50):29
+2016-08-01 18:31:45 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:31:45 [yelp.fetch_free_proxyes] INFO: +++Check Success(32/50):202.78.73.90:8080
+2016-08-01 18:31:45 [yelp.fetch_free_proxyes] INFO: +++Check Success(38/50):47.90.15.123:80
+2016-08-01 18:31:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:31:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:31:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:46 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:31:47 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:31:47 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:31:48 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:48 [yelp.fetch_free_proxyes] INFO: ---Check Failure(30/50):30
+2016-08-01 18:31:48 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:31:48 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:48 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:31:48 [yelp.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-01 18:31:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:31:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:31:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-01 18:31:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:49 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:31:51 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:51 [yelp.fetch_free_proxyes] INFO: ---Check Failure(31/50):31
+2016-08-01 18:31:51 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:51 [yelp.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-01 18:31:51 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:31:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:31:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:31:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:31:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(32/50):32
+2016-08-01 18:31:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:31:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:31:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:31:52 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:54 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:31:54 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:31:54 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:54 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:31:54 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:31:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:31:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:31:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:31:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:31:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(33/50):33
+2016-08-01 18:31:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:31:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:31:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:31:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-01 18:31:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:31:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:55 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:57 [yelp.fetch_free_proxyes] INFO: +++Check Success(40/50):80.242.171.33:8888
+2016-08-01 18:31:57 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:31:57 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:31:57 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:31:57 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:31:57 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:31:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:31:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:31:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:31:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(34/50):34
+2016-08-01 18:31:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(35/50):35
+2016-08-01 18:31:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:31:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:31:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:31:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:31:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:31:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:31:58 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:32:00 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:32:00 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:32:00 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(36/50):36
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:32:01 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:32:03 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:32:03 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:32:03 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:32:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(37/50):37
+2016-08-01 18:32:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-01 18:32:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-01 18:32:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:32:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:32:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-01 18:32:04 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:32:05 [yelp.fetch_free_proxyes] INFO: +++Check Success(40/50):178.238.228.187:80
+2016-08-01 18:32:05 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:32:06 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:32:06 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:32:06 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:32:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(38/50):38
+2016-08-01 18:32:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:32:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:32:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:32:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:32:07 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:32:08 [yelp.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-01 18:32:08 [yelp.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-01 18:32:08 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:32:09 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:32:09 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:32:09 [yelp.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-01 18:32:09 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:32:10 [yelp.fetch_free_proxyes] INFO: ---Check Failure(39/50):39
+2016-08-01 18:32:10 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:32:10 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:32:10 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:32:10 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:32:11 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:32:11 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:32:12 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:32:12 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:32:12 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:32:12 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:32:13 [yelp.fetch_free_proxyes] INFO: ---Check Failure(40/50):40
+2016-08-01 18:32:13 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:32:13 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:32:13 [yelp.fetch_free_proxyes] INFO: ---Check Failure(41/50):41
+2016-08-01 18:32:13 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:32:13 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:32:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:32:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:32:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:32:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:14 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:32:15 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:32:15 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:32:15 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:15 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:32:16 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:32:16 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:32:16 [yelp.fetch_free_proxyes] INFO: ---Check Failure(42/50):42
+2016-08-01 18:32:17 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:17 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:32:17 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:32:17 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:32:18 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:32:18 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:32:18 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:32:19 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:32:19 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:32:19 [yelp.fetch_free_proxyes] INFO: ---Check Failure(43/50):43
+2016-08-01 18:32:19 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:32:20 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:20 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:32:20 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:32:20 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:32:21 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:21 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:32:21 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:32:22 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:32:22 [yelp.fetch_free_proxyes] INFO: ---Check Failure(44/50):44
+2016-08-01 18:32:22 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:32:23 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:32:23 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:32:23 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:32:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:32:24 [yelp.fetch_free_proxyes] INFO: +++Check Success(45/50):46.101.128.121:8090
+2016-08-01 18:32:24 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:32:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(45/50):45
+2016-08-01 18:32:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:32:25 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:26 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:32:26 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:32:26 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:32:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:32:27 [yelp.fetch_free_proxyes] INFO: ---Check Failure(46/50):46
+2016-08-01 18:32:28 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:28 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:28 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:32:28 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(47/50):47
+2016-08-01 18:32:30 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:31 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(48/50):48
+2016-08-01 18:32:33 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:34 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(49/50):49
+2016-08-01 18:32:36 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:37 [yelp.fetch_free_proxyes] INFO: ---Check Failure(50/50):50
+2016-08-01 18:32:37 [py.warnings] WARNING: /home/jason/workspace/yelp/yelp/middlewares.py:43: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  log.msg('*******current proxy is:{0}'.format(proxy))
+
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:186.229.25.114:80
+2016-08-01 18:32:37 [py.warnings] WARNING: /home/jason/workspace/yelp/yelp/middlewares.py:24: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  log.msg('Current UserAgent: ' + ua, level=log.INFO)
+
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3
+2016-08-01 18:32:37 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:77.251.233.243:80
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:80.242.171.33:8888
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:184.49.237.6:8080
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:182.37.6.9:8118
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:45.115.173.94:80
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:186.229.25.114:80
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:128.199.78.87:60000
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:125.111.171.158:8118
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:182.53.247.164:8080
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:80.242.171.33:8888
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:32:37 [py.warnings] WARNING: /home/jason/workspace/yelp/yelp/middlewares.py:41: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  log.msg('*******current proxy is:local', level=log.INFO)
+
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:local
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:182.53.247.164:8080
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:221.237.123.14:8118
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:45.115.173.94:80
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3
+2016-08-01 18:32:37 [scrapy] INFO: *******current proxy is:54.169.237.120:80
+2016-08-01 18:32:37 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3
+2016-08-01 18:32:41 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=arcades> (referer: None)
+2016-08-01 18:32:41 [scrapy] INFO: *******current proxy is:1.207.222.83:80
+2016-08-01 18:32:41 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1
+2016-08-01 18:32:43 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=galleries> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-08-01 18:32:43 [scrapy] INFO: *******current proxy is:186.229.25.114:80
+2016-08-01 18:32:43 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6
+2016-08-01 18:32:45 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos> (referer: None) ['partial']
+2016-08-01 18:32:45 [scrapy] INFO: *******current proxy is:54.169.237.120:80
+2016-08-01 18:32:45 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:32:51 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=culturalcenter> (referer: None)
+2016-08-01 18:32:51 [scrapy] INFO: *******current proxy is:125.135.179.153:8080
+2016-08-01 18:32:51 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:32:51 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=culturalcenter>: HTTP status code is not handled or not allowed
+2016-08-01 18:32:54 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=countryclubs> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-08-01 18:32:54 [scrapy] INFO: *******current proxy is:125.135.179.153:8080
+2016-08-01 18:32:54 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6
+2016-08-01 18:32:55 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=movietheaters> (failed 1 times): User timeout caused connection failure: Getting http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=movietheaters took longer than 10.0 seconds..
+2016-08-01 18:32:55 [scrapy] INFO: *******current proxy is:92.50.158.22:80
+2016-08-01 18:32:55 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:32:56 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=festivals> (referer: None)
+2016-08-01 18:32:56 [scrapy] INFO: *******current proxy is:125.135.179.153:8080
+2016-08-01 18:32:56 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:32:58 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=museums> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-08-01 18:32:58 [scrapy] INFO: *******current proxy is:178.238.228.187:80
+2016-08-01 18:32:58 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5
+2016-08-01 18:32:59 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=jazzandblues> (referer: None) ['partial']
+2016-08-01 18:32:59 [scrapy] INFO: *******current proxy is:186.229.25.114:80
+2016-08-01 18:32:59 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:33:02 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=musicvenues> (referer: None)
+2016-08-01 18:33:02 [scrapy] INFO: *******current proxy is:92.50.158.22:80
+2016-08-01 18:33:02 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:33:05 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=paintandsip> (referer: None) ['partial']
+2016-08-01 18:33:05 [scrapy] INFO: *******current proxy is:47.90.15.123:80
+2016-08-01 18:33:05 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3
+2016-08-01 18:33:07 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=theater> (referer: None)
+2016-08-01 18:33:07 [scrapy] INFO: *******current proxy is:178.238.228.187:80
+2016-08-01 18:33:07 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1
+2016-08-01 18:33:10 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=sportsteams> (referer: None)
+2016-08-01 18:33:10 [scrapy] INFO: *******current proxy is:local
+2016-08-01 18:33:10 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3
+2016-08-01 18:33:14 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=psychic_astrology> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+2016-08-01 18:33:14 [scrapy] INFO: *******current proxy is:221.237.123.14:8118
+2016-08-01 18:33:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1
+2016-08-01 18:33:14 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=social_clubs> (referer: None)
+2016-08-01 18:33:14 [scrapy] INFO: *******current proxy is:221.237.123.14:8118
+2016-08-01 18:33:14 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5
+2016-08-01 18:33:15 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=social_clubs>: HTTP status code is not handled or not allowed
+2016-08-01 18:33:18 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=ticketsales> (referer: None)
+2016-08-01 18:33:18 [scrapy] INFO: *******current proxy is:46.101.128.121:8090
+2016-08-01 18:33:18 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11
+2016-08-01 18:33:18 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=ticketsales>: HTTP status code is not handled or not allowed
+2016-08-01 18:33:20 [scrapy] INFO: Crawled 11 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2016-08-01 18:33:22 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=arcades> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=arcades)
+2016-08-01 18:33:22 [scrapy] INFO: *******current proxy is:182.53.247.164:8080
+2016-08-01 18:33:22 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3
+2016-08-01 18:33:22 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=arcades>
+{'address': [u'901 S Boone St', u'Aberdeen, WA 98520'],
+ 'categories': [u'Laser Tag', u'Arcades', u'Go Karts'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Extreme Fun Center'],
+ 'phone': [u'(360) 637-8093']}
+2016-08-01 18:33:22 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=arcades>
+{'address': [u'1017 South Boone St', u'Aberdeen, WA 98520'],
+ 'categories': [u'Leisure Centers', u'Arcades', u'Kids Activities'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'The Old Goldmine Arcade'],
+ 'phone': [u'(360) 589-3857']}
+2016-08-01 18:33:25 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+2016-08-01 18:33:25 [scrapy] INFO: *******current proxy is:184.49.237.6:8080
+2016-08-01 18:33:25 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11
+2016-08-01 18:33:26 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=stadiumsarenas> (failed 1 times): User timeout caused connection failure: Getting http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=stadiumsarenas took longer than 10.0 seconds..
+2016-08-01 18:33:26 [scrapy] INFO: *******current proxy is:45.115.173.94:80
+2016-08-01 18:33:26 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5
+2016-08-01 18:33:28 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=movietheaters> (referer: None)
+2016-08-01 18:33:28 [scrapy] INFO: *******current proxy is:184.49.237.6:8080
+2016-08-01 18:33:28 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:33:28 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=movietheaters>: HTTP status code is not handled or not allowed
+2016-08-01 18:33:30 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=wineries> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+2016-08-01 18:33:30 [scrapy] INFO: *******current proxy is:125.135.179.153:8080
+2016-08-01 18:33:30 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6
+2016-08-01 18:33:31 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=countryclubs> (referer: None)
+2016-08-01 18:33:31 [scrapy] INFO: *******current proxy is:local
+2016-08-01 18:33:31 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:33:32 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=galleries> (failed 2 times): User timeout caused connection failure: Getting http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=galleries took longer than 10.0 seconds..
+2016-08-01 18:33:32 [scrapy] INFO: *******current proxy is:1.207.222.83:80
+2016-08-01 18:33:32 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6
+2016-08-01 18:33:34 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=festivals> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=festivals)
+2016-08-01 18:33:34 [scrapy] INFO: *******current proxy is:45.115.173.94:80
+2016-08-01 18:33:34 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:33:34 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=festivals>: HTTP status code is not handled or not allowed
+2016-08-01 18:33:39 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=jazzandblues> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=jazzandblues)
+2016-08-01 18:33:39 [scrapy] INFO: *******current proxy is:80.242.171.33:8888
+2016-08-01 18:33:39 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6
+2016-08-01 18:33:39 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=jazzandblues>: HTTP status code is not handled or not allowed
+2016-08-01 18:33:40 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=museums> (referer: None)
+2016-08-01 18:33:40 [scrapy] INFO: *******current proxy is:local
+2016-08-01 18:33:40 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:33:42 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=musicvenues> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=musicvenues)
+2016-08-01 18:33:42 [scrapy] INFO: *******current proxy is:182.37.6.9:8118
+2016-08-01 18:33:42 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:33:42 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=musicvenues>: HTTP status code is not handled or not allowed
+2016-08-01 18:33:44 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=antiques> (referer: None)
+2016-08-01 18:33:44 [scrapy] INFO: *******current proxy is:80.242.171.33:8888
+2016-08-01 18:33:44 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6
+2016-08-01 18:33:44 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=antiques>: HTTP status code is not handled or not allowed
+2016-08-01 18:33:46 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=theater> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=theater)
+2016-08-01 18:33:46 [scrapy] INFO: *******current proxy is:182.253.201.77:10000
+2016-08-01 18:33:46 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3
+2016-08-01 18:33:46 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=theater>
+{'address': [u'205 S I St', u'Aberdeen, WA 98520'],
+ 'categories': [u'Performing Arts', u'Music Venues'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media1.fl.yelpcdn.com/bphoto/xqWCCnw2G0lBndZ7plWDgA/90s.jpg',
+ 'name': [u'D&R Theater'],
+ 'phone': [u'(360) 532-8443']}
+2016-08-01 18:33:46 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=theater>
+{'address': [u'313 7th St', u'Hoquiam, WA 98550'],
+ 'categories': [u'Performing Arts', u'Cinema', u'Venues & Event Spaces'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/bphoto/K_X59TnG-2ic63sIyrwx6A/90s.jpg',
+ 'name': [u'7th Street Theatre'],
+ 'phone': [u'(360) 537-7400']}
+2016-08-01 18:33:46 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=theater>
+{'address': [u'518 8th St', u'Raymond, WA 98577'],
+ 'categories': [u'Performing Arts', u'Cinema'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Hannan Playhouse'],
+ 'phone': [u'(360) 942-5477']}
+2016-08-01 18:33:46 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=theater>
+{'address': [u'323 3rd St', u'Raymond, WA 98577'],
+ 'categories': [u'Performing Arts'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/bphoto/VzFq6xLRGPPEjzDxtXYAlQ/90s.jpg',
+ 'name': [u'Raymond Theater'],
+ 'phone': [u'(360) 942-4127']}
+2016-08-01 18:33:46 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=theater>
+{'address': [u'Elma, WA 98541'],
+ 'categories': [u'Performing Arts'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Dancers Unlimited'],
+ 'phone': [u'(360) 482-5033']}
+2016-08-01 18:33:46 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=theater>
+{'address': [u'113 N 4th St', u'Elma, WA 98541'],
+ 'categories': [u'Performing Arts', u'Cinema'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Elma Theatre'],
+ 'phone': [u'(360) 482-4810']}
+2016-08-01 18:33:46 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=theater>
+{'address': [u'1221 E Shelton Springs Rd', u'Shelton, WA 98584'],
+ 'categories': [u'Performing Arts'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Shelton Dance Center'],
+ 'phone': [u'(360) 426-7681']}
+2016-08-01 18:33:54 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=psychic_astrology> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+2016-08-01 18:33:54 [scrapy] INFO: *******current proxy is:178.238.228.187:80
+2016-08-01 18:33:54 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5
+2016-08-01 18:33:55 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts> (referer: None)
+2016-08-01 18:33:55 [scrapy] INFO: *******current proxy is:1.207.222.83:80
+2016-08-01 18:33:55 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:33:55 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=sportsteams> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+2016-08-01 18:33:55 [scrapy] INFO: *******current proxy is:80.242.171.23:8888
+2016-08-01 18:33:55 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6
+2016-08-01 18:33:59 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=stadiumsarenas> (referer: None)
+2016-08-01 18:33:59 [scrapy] INFO: *******current proxy is:125.111.171.158:8118
+2016-08-01 18:33:59 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6
+2016-08-01 18:33:59 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=stadiumsarenas>: HTTP status code is not handled or not allowed
+2016-08-01 18:34:01 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=media> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+2016-08-01 18:34:01 [scrapy] INFO: *******current proxy is:202.78.73.90:8080
+2016-08-01 18:34:01 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:34:01 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=galleries> (failed 1 times): User timeout caused connection failure.
+2016-08-01 18:34:01 [scrapy] INFO: *******current proxy is:local
+2016-08-01 18:34:01 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3
+2016-08-01 18:34:01 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=wineries> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+2016-08-01 18:34:01 [scrapy] INFO: *******current proxy is:45.115.173.94:80
+2016-08-01 18:34:01 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:34:05 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=cosmetics> (referer: None)
+2016-08-01 18:34:05 [scrapy] INFO: *******current proxy is:46.101.128.121:8090
+2016-08-01 18:34:05 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6
+2016-08-01 18:34:05 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos> (failed 2 times): User timeout caused connection failure.
+2016-08-01 18:34:05 [scrapy] INFO: *******current proxy is:80.242.171.33:8888
+2016-08-01 18:34:05 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11
+2016-08-01 18:34:07 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=countryclubs> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=countryclubs)
+2016-08-01 18:34:07 [scrapy] INFO: *******current proxy is:47.90.15.123:80
+2016-08-01 18:34:07 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5
+2016-08-01 18:34:07 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=countryclubs>: HTTP status code is not handled or not allowed
+2016-08-01 18:34:10 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=galleries> (referer: None)
+2016-08-01 18:34:10 [scrapy] INFO: *******current proxy is:1.207.222.83:80
+2016-08-01 18:34:10 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6
+2016-08-01 18:34:10 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=galleries>: HTTP status code is not handled or not allowed
+2016-08-01 18:34:15 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=drugstores> (referer: None)
+2016-08-01 18:34:15 [scrapy] INFO: *******current proxy is:92.50.158.22:80
+2016-08-01 18:34:15 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:34:16 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=museums> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+2016-08-01 18:34:16 [scrapy] INFO: *******current proxy is:47.90.15.123:80
+2016-08-01 18:34:16 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:34:20 [scrapy] INFO: Crawled 26 pages (at 15 pages/min), scraped 9 items (at 9 items/min)
+2016-08-01 18:34:21 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=deptstores> (referer: None) ['partial']
+2016-08-01 18:34:21 [scrapy] INFO: *******current proxy is:80.242.171.33:8888
+2016-08-01 18:34:21 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:34:24 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=opticians> (referer: None)
+2016-08-01 18:34:24 [scrapy] INFO: *******current proxy is:46.101.128.121:8090
+2016-08-01 18:34:24 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:34:24 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=electronics> (referer: None) ['partial']
+2016-08-01 18:34:24 [scrapy] INFO: *******current proxy is:125.135.179.153:8080
+2016-08-01 18:34:24 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:34:24 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=psychic_astrology> (referer: None)
+2016-08-01 18:34:24 [scrapy] INFO: *******current proxy is:202.78.73.90:8080
+2016-08-01 18:34:24 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:34:24 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=psychic_astrology>: HTTP status code is not handled or not allowed
+2016-08-01 18:34:26 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=fashion> (referer: None)
+2016-08-01 18:34:26 [scrapy] INFO: *******current proxy is:182.53.247.164:8080
+2016-08-01 18:34:26 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:34:26 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=fashion>: HTTP status code is not handled or not allowed
+2016-08-01 18:34:30 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts&start=20> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-08-01 18:34:30 [scrapy] INFO: *******current proxy is:182.53.247.164:8080
+2016-08-01 18:34:30 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:34:30 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=sportsteams> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=sportsteams) ['partial']
+2016-08-01 18:34:30 [scrapy] INFO: *******current proxy is:128.199.78.87:60000
+2016-08-01 18:34:30 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:34:30 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=sportsteams>
+{'address': [u'521 W Business Park Rd', u'Shelton, WA 98584'],
+ 'categories': [u'Amateur Sports Teams', u'Professional Sports Teams'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Shelton Rifle & Pistol Club'],
+ 'phone': [u'(360) 427-1102']}
+2016-08-01 18:34:34 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts&start=10> (failed 1 times): [<twisted.python.failure.Failure twisted.web._newclient.ParseError: (u'wrong number of parts', '<h1>Unauthorized ...</h1>')>]
+2016-08-01 18:34:34 [scrapy] INFO: *******current proxy is:125.111.171.158:8118
+2016-08-01 18:34:34 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:34:36 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts)
+2016-08-01 18:34:36 [scrapy] INFO: *******current proxy is:45.115.173.94:80
+2016-08-01 18:34:36 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5
+2016-08-01 18:34:36 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts>
+{'address': [u'1017 S Boone St', u'Aberdeen, WA 98520'],
+ 'categories': [u'Arts & Crafts'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media4.fl.yelpcdn.com/bphoto/S9lKAiLyp8ah_Jqya_LhHQ/90s.jpg',
+ 'name': [u'Harbor Bead and', u'Crafts'],
+ 'phone': [u'(360) 532-7700']}
+2016-08-01 18:34:36 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts>
+{'address': [u'208 S Broadway St', u'Aberdeen, WA 98520'],
+ 'categories': [u'Fabric Stores', u'Sewing & Alterations'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Quilt Harbor Too'],
+ 'phone': [u'(360) 532-1200']}
+2016-08-01 18:34:36 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts>
+{'address': [u'113 E Wishkah St', u'Aberdeen, WA 98520'],
+ 'categories': [u'Arts & Crafts'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Clyde & Sylvia\u2019s Frames-N Things'],
+ 'phone': [u'(360) 537-5755']}
+2016-08-01 18:34:36 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts>
+{'address': [u'2544 Simpson Ave', u'Hoquiam, WA 98550'],
+ 'categories': [u'Drugstores', u'Cards & Stationery'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Crown Drug'],
+ 'phone': [u'(360) 533-0961']}
+2016-08-01 18:34:36 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts>
+{'address': [u'400 E Dock St', u'Westport, WA 98595'],
+ 'categories': [u'Cards & Stationery'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media1.fl.yelpcdn.com/bphoto/_7tCae6xRxt3x1GqdYqv6g/90s.jpg',
+ 'name': [u'Basket House'],
+ 'phone': [u'(360) 268-0727']}
+2016-08-01 18:34:36 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts>
+{'address': [u'699 Ocean Shores Blvd', u'Ocean Shores, WA 98569'],
+ 'categories': [u'Arts & Crafts', u'Gift Shops'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media4.fl.yelpcdn.com/bphoto/NBF_CtyYkC6h3xrDpjHIhQ/90s.jpg',
+ 'name': [u'Sharky\u2019s'],
+ 'phone': [u'(360) 289-4462']}
+2016-08-01 18:34:36 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts>
+{'address': [u'897 Minard Ave NW', u'Ocean Shores, WA 98569'],
+ 'categories': [u'Fabric Stores'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Cranberry Bay Fabrics and More'],
+ 'phone': [u'(360) 289-0984']}
+2016-08-01 18:34:36 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts>
+{'address': [u'Copalis Crossing, WA 98536'],
+ 'categories': [u'Fashion', u'Embroidery & Crochet'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media4.fl.yelpcdn.com/bphoto/jZvktMJ8VrwOhXGjaR55Dw/90s.jpg',
+ 'name': [u'Cheri s Embroidery'],
+ 'phone': [u'(360) 289-0424']}
+2016-08-01 18:34:36 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts>
+{'address': [u'1600 W Ocean Ave', u'Westport, WA 98595'],
+ 'categories': [u'Framing', u'Signmaking'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media4.fl.yelpcdn.com/bphoto/a0ND8c42PXxf4XwUa_y61Q/90s.jpg',
+ 'name': [u'Chalk Whisperer'],
+ 'phone': [u'(360) 591-4951']}
+2016-08-01 18:34:36 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts>
+{'address': [u'2619 State Rt 109', u'Ocean City, WA 98569'],
+ 'categories': [u'Home & Garden', u'Arts & Crafts'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/bphoto/odUKzmhjoPc1FzLRuRpylQ/90s.jpg',
+ 'name': [u'Ocean City Marketplace'],
+ 'phone': [u'(406) 438-3861']}
+2016-08-01 18:34:39 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=galleries> (referer: None)
+2016-08-01 18:34:39 [scrapy] INFO: *******current proxy is:80.242.171.23:8888
+2016-08-01 18:34:39 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:34:40 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=galleries>: HTTP status code is not handled or not allowed
+2016-08-01 18:34:45 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos) ['partial']
+2016-08-01 18:34:45 [scrapy] INFO: *******current proxy is:80.242.171.23:8888
+2016-08-01 18:34:45 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3
+2016-08-01 18:34:45 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos>
+{'address': [u'78 State Rte 115', u'Ocean Shores, WA 98569'],
+ 'categories': [u'Casinos'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media4.fl.yelpcdn.com/bphoto/5xKjtyJs0M2o0XdJ-Gv6bQ/90s.jpg',
+ 'name': [u'Quinault Beach Casino'],
+ 'phone': [u'(888) 461-2214']}
+2016-08-01 18:34:45 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos>
+{'address': [u'4112 Hwy 105', u'Tokeland, WA 98590'],
+ 'categories': [u'Casinos', u'Bars'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media4.fl.yelpcdn.com/bphoto/mbZ96zl2h9-ib-hoN9cZ9Q/90s.jpg',
+ 'name': [u'Shoalwater Bay Casino'],
+ 'phone': [u'(360) 267-2048']}
+2016-08-01 18:34:45 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos>
+{'address': [u'12888 188Th Ave Sw', u'Rochester, WA 98579'],
+ 'categories': [u'Casinos'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media4.fl.yelpcdn.com/bphoto/kCuLfxkG8Y5d5ANAQwNA-Q/90s.jpg',
+ 'name': [u'Lucky Eagle Casino'],
+ 'phone': [u'(360) 273-2000']}
+2016-08-01 18:34:45 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos>
+{'address': [u'91 W State Rt 108', u'Shelton, WA 98584'],
+ 'categories': [u'Casinos', u'Venues & Event Spaces', u'Resorts'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media1.fl.yelpcdn.com/bphoto/N3zivlygk44fZ7jOOVbTmg/90s.jpg',
+ 'name': [u'Little Creek Casino Resort'],
+ 'phone': [u'(800) 667-7711']}
+2016-08-01 18:34:45 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos>
+{'address': [u'4108 State Route 105', u'Tokeland, WA 98590'],
+ 'categories': [u'Casinos'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Shoalwater Bay Gaming Commission'],
+ 'phone': [u'(360) 267-1221']}
+2016-08-01 18:34:45 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos>
+{'address': [u'19330 N US Hwy 101', u'Skokomish, WA 98584'],
+ 'categories': [u'Casinos', u'Sports Bars'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/bphoto/uh0fNbc5vyEBArOmCZhXPQ/90s.jpg',
+ 'name': [u'Lucky Dog Casino'],
+ 'phone': [u'(360) 877-5656']}
+2016-08-01 18:34:45 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos>
+{'address': [u'12840 188th Ave SW', u'Rochester, WA 98579'],
+ 'categories': [u'Hotels', u'Casinos'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media2.fl.yelpcdn.com/bphoto/N0JBUznvPGvR8Wa5HOfGkA/90s.jpg',
+ 'name': [u'Eagles Landing Hotel'],
+ 'phone': [u'(360) 273-8640']}
+2016-08-01 18:34:45 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos>
+{'address': [u'12888 188th Ave SW', u'Rochester, WA 98579'],
+ 'categories': [u'Hotels', u'Casinos'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Lucky Eagle'],
+ 'phone': [u'(800) 720-1788']}
+2016-08-01 18:34:45 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos>
+{'address': [u'91 West State Rt 108 Shelton', u'Kamilche, WA 98584'],
+ 'categories': [u'Casinos', u'Lounges'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media4.fl.yelpcdn.com/bphoto/ZYGmlL2r16OANzE5F0QH7A/90s.jpg',
+ 'name': [u'Squaxin Resort & Lounge'],
+ 'phone': [u'(360) 427-7711']}
+2016-08-01 18:34:45 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=casinos>
+{'address': [u'12888 188th Ave SW', u'Rochester, WA 98579'],
+ 'categories': [u'Casinos'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Chehalis Indian Tribe'],
+ 'phone': [u'(360) 273-2000']}
+2016-08-01 18:34:46 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=cosmetics> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=cosmetics)
+2016-08-01 18:34:46 [scrapy] INFO: *******current proxy is:80.242.171.33:8888
+2016-08-01 18:34:46 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1
+2016-08-01 18:34:46 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=cosmetics>: HTTP status code is not handled or not allowed
+2016-08-01 18:34:48 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=wineries> (referer: None)
+2016-08-01 18:34:48 [scrapy] INFO: *******current proxy is:182.37.6.9:8118
+2016-08-01 18:34:48 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:34:49 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=wineries>: HTTP status code is not handled or not allowed
+2016-08-01 18:34:50 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=flowers> (referer: None)
+2016-08-01 18:34:50 [scrapy] INFO: *******current proxy is:128.199.78.87:60000
+2016-08-01 18:34:50 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:34:50 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=flowers>: HTTP status code is not handled or not allowed
+2016-08-01 18:34:50 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=media> (failed 2 times): User timeout caused connection failure.
+2016-08-01 18:34:50 [scrapy] INFO: *******current proxy is:125.111.171.158:8118
+2016-08-01 18:34:50 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6
+2016-08-01 18:34:52 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=drugstores> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=drugstores)
+2016-08-01 18:34:52 [scrapy] INFO: *******current proxy is:125.135.179.153:8080
+2016-08-01 18:34:52 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3
+2016-08-01 18:34:52 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=drugstores>: HTTP status code is not handled or not allowed
+2016-08-01 18:34:56 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=museums> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=museums) ['partial']
+2016-08-01 18:34:56 [scrapy] INFO: *******current proxy is:221.237.123.14:8118
+2016-08-01 18:34:56 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:34:56 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=museums>
+{'address': [u'111 E 3rd St', u'Aberdeen, WA 98520'],
+ 'categories': [u'Museums'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media2.fl.yelpcdn.com/bphoto/YJH3H2KOqmtRuKnaRMuMJA/90s.jpg',
+ 'name': [u'Aberdeen Museum of History'],
+ 'phone': [u'(360) 533-1976']}
+2016-08-01 18:34:56 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=museums>
+{'address': [u'500 N Custer', u'Aberdeen, WA 98520'],
+ 'categories': [u'Landmarks & Historical Buildings',
+                u'Local Flavor',
+                u'Museums'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media4.fl.yelpcdn.com/bphoto/GcvFP3KVd7vAjm51Mo8a8A/90s.jpg',
+ 'name': [u'The Lady Washington'],
+ 'phone': [u'']}
+2016-08-01 18:34:56 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=museums>
+{'address': [u'500 N Custer', u'Aberdeen, WA 98520'],
+ 'categories': [u'Landmarks & Historical Buildings',
+                u'Local Flavor',
+                u'Museums'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Hawaiian Chieftain'],
+ 'phone': [u'']}
+2016-08-01 18:34:56 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=museums>
+{'address': [u'1611 Riverside Ave', u'Hoquiam, WA 98550'],
+ 'categories': [u'Museums'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Polson Museum'],
+ 'phone': [u'(360) 533-5862']}
+2016-08-01 18:34:56 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=museums>
+{'address': [u'515 Chenault Ave', u'Hoquiam, WA 98550'],
+ 'categories': [u'Hotels', u'Museums', u'Bed & Breakfast'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Hoquiam\u2019s Castle'],
+ 'phone': [u'(360) 533-2005']}
+2016-08-01 18:35:03 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=homeandgarden> (referer: None)
+2016-08-01 18:35:03 [scrapy] INFO: *******current proxy is:184.49.237.6:8080
+2016-08-01 18:35:03 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3
+2016-08-01 18:35:03 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=jewelry> (failed 1 times): [<twisted.python.failure.Failure twisted.web._newclient.ParseError: (u'wrong number of parts', '<h1>Unauthorized ...</h1>')>]
+2016-08-01 18:35:03 [scrapy] INFO: *******current proxy is:92.50.158.22:80
+2016-08-01 18:35:03 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11
+2016-08-01 18:35:07 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=deptstores> (failed 1 times): User timeout caused connection failure.
+2016-08-01 18:35:07 [scrapy] INFO: *******current proxy is:45.115.173.94:80
+2016-08-01 18:35:07 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:35:08 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=electronics> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=electronics)
+2016-08-01 18:35:08 [scrapy] INFO: *******current proxy is:182.253.201.77:10000
+2016-08-01 18:35:08 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3
+2016-08-01 18:35:08 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=electronics>
+{'address': [u'1420 Sumner Ave', u'Aberdeen, WA 98520'],
+ 'categories': [u'Electronics'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media1.fl.yelpcdn.com/bphoto/cAHkm8KiaIKjlvAegHvxmw/90s.jpg',
+ 'name': [u'Game Freaks'],
+ 'phone': [u'(360) 637-8504']}
+2016-08-01 18:35:08 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=electronics>
+{'address': [u'110 E Wishkah St', u'Aberdeen, WA 98520'],
+ 'categories': [u'Electronics', u'Musical Instruments & Teachers'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Rosevear\u2019s Music Center'],
+ 'phone': [u'(360) 532-3011']}
+2016-08-01 18:35:08 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=electronics>
+{'address': [u'2729 Simpson Avenue', u'Aberdeen, WA 98520'],
+ 'categories': [u'Mobile Phones', u'Hobby Shops', u'Electronics'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media1.fl.yelpcdn.com/bphoto/LAqBXZu83G5Y-z47XPw6eQ/90s.jpg',
+ 'name': [u'RadioShack'],
+ 'phone': [u'(360) 533-5474']}
+2016-08-01 18:35:08 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=electronics>
+{'address': [],
+ 'categories': [u'Electronics',
+                u'IT Services & Computer Repair',
+                u'Internet Service Providers'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media1.fl.yelpcdn.com/bphoto/we1ggWHr6TI-k1r7748sHQ/90s.jpg',
+ 'name': [u'Techline'],
+ 'phone': [u'(360) 533-0343']}
+2016-08-01 18:35:08 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=electronics>
+{'address': [u'618 W Market St', u'Aberdeen, WA 98520'],
+ 'categories': [u'Mobile Phones', u'Electronics'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Westside Communications and Paging'],
+ 'phone': [u'(360) 532-6922']}
+2016-08-01 18:35:08 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=electronics>
+{'address': [u'2614 Simpson Ave', u'Hoquiam, WA 98550'],
+ 'categories': [u'Mobile Phones', u'Electronics', u'Car Stereo Installation'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Harbor Electronics'],
+ 'phone': [u'(360) 532-3474']}
+2016-08-01 18:35:08 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=electronics>
+{'address': [],
+ 'categories': [u'Electronics',
+                u'Home Theatre Installation',
+                u'Home Network Installation'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media1.fl.yelpcdn.com/bphoto/BLe_UB1fIR_fAQ4JnK1s8w/90s.jpg',
+ 'name': [u'Desco Audio & Video'],
+ 'phone': [u'(360) 943-1393']}
+2016-08-01 18:35:08 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=opticians> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=opticians)
+2016-08-01 18:35:08 [scrapy] INFO: *******current proxy is:184.49.237.6:8080
+2016-08-01 18:35:08 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3
+2016-08-01 18:35:08 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=opticians>
+{'address': [u'207 S Chehalis St', u'Aberdeen, WA 98520'],
+ 'categories': [u'Optometrists', u'Eyewear & Opticians', u'Ophthalmologists'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Twin Harbors Eye Center MD'],
+ 'phone': [u'(360) 533-2020']}
+2016-08-01 18:35:08 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=opticians>
+{'address': [u'207 S Chehalis St', u'Aberdeen, WA 98520'],
+ 'categories': [u'Optometrists', u'Eyewear & Opticians', u'Ophthalmologists'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Ruyle Susan MD'],
+ 'phone': [u'(360) 533-2020']}
+2016-08-01 18:35:08 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=opticians>
+{'address': [u'909 E Wishkah St', u'Aberdeen, WA 98520'],
+ 'categories': [u'Optometrists', u'Eyewear & Opticians'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Weyrich James OD'],
+ 'phone': [u'(360) 538-2720']}
+2016-08-01 18:35:12 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts&start=10> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-08-01 18:35:12 [scrapy] INFO: *******current proxy is:80.242.171.33:8888
+2016-08-01 18:35:12 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:35:13 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts&start=20> (referer: http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts) ['partial']
+2016-08-01 18:35:13 [scrapy] INFO: *******current proxy is:182.53.247.164:8080
+2016-08-01 18:35:13 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:35:14 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts&start=20>
+{'address': [u'1800 Olympic Hwy S', u'Shelton, WA 98584'],
+ 'categories': [u'Arts & Crafts'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Yards Of Yarn'],
+ 'phone': [u'(360) 426-6230']}
+2016-08-01 18:35:14 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts&start=20>
+{'address': [u'8434 180th Way SW', u'Rochester, WA 98579'],
+ 'categories': [u'Arts & Crafts'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'The Hens Den'],
+ 'phone': [u'(360) 273-3480']}
+2016-08-01 18:35:14 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts&start=20>
+{'address': [u'122 S 3rd St', u'Shelton, WA 98584'],
+ 'categories': [u'Framing'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Art', u'Custom Frame & Gallery'],
+ 'phone': [u'(360) 432-1101']}
+2016-08-01 18:35:14 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts&start=20>
+{'address': [u'221 W Railroad Ave Ste A', u'Shelton, WA 98584'],
+ 'categories': [u'Art Supplies'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Old Town Hobby'],
+ 'phone': [u'(360) 432-1026']}
+2016-08-01 18:35:14 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts&start=20>
+{'address': [u'7822 Whittaker Rd NW', u'Olympia, WA 98502'],
+ 'categories': [u'Fabric Stores', u'Interior Design'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Barnhart Collection'],
+ 'phone': [u'(360) 866-2423']}
+2016-08-01 18:35:14 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts&start=20>
+{'address': [u'6311 Shawn Dr SW', u'Olympia, WA 98512'],
+ 'categories': [u'Arts & Crafts'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media4.fl.yelpcdn.com/bphoto/3Z_O92qyYYuGON8vHkw6sg/90s.jpg',
+ 'name': [u'Alpine Holiday Bows & Ribbon'],
+ 'phone': [u'(360) 753-5739']}
+2016-08-01 18:35:14 [scrapy] DEBUG: Scraped from <200 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=artsandcrafts&start=20>
+{'address': [u'7505 183rd Ave SW Unit C', u'Rochester, WA 98579'],
+ 'categories': [u'Fabric Stores'],
+ 'filename': '/home/jason/scrapy_data/20160801/www.yelp.com/AberdeenWA.csv',
+ 'img': u'//s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/fe8c0c8725d3/assets/img/default_avatars/business_90_square.png',
+ 'name': [u'Quilting Cottage'],
+ 'phone': [u'(360) 273-5522']}
+2016-08-01 18:35:15 [scrapy] DEBUG: Crawled (404) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=mobilephones> (referer: None)
+2016-08-01 18:35:15 [scrapy] INFO: *******current proxy is:186.229.25.114:80
+2016-08-01 18:35:15 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5
+2016-08-01 18:35:15 [scrapy] DEBUG: Ignoring response <404 http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=mobilephones>: HTTP status code is not handled or not allowed
+2016-08-01 18:35:20 [scrapy] INFO: Crawled 45 pages (at 19 pages/min), scraped 52 items (at 43 items/min)
+2016-08-01 18:35:22 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=musicalinstrumentsandteachers> (referer: None) ['partial']
+2016-08-01 18:35:22 [scrapy] INFO: *******current proxy is:182.37.6.9:8118
+2016-08-01 18:35:22 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+2016-08-01 18:35:23 [scrapy] DEBUG: Retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=tobaccoshops> (failed 1 times): 503 Service Unavailable
+2016-08-01 18:35:23 [scrapy] INFO: *******current proxy is:125.111.171.158:8118
+2016-08-01 18:35:23 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1
+2016-08-01 18:35:24 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=sportgoods> (referer: None) ['partial']
+2016-08-01 18:35:24 [scrapy] INFO: *******current proxy is:178.238.228.187:80
+2016-08-01 18:35:24 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:35:24 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=photographystores> (referer: None) ['partial']
+2016-08-01 18:35:24 [scrapy] INFO: *******current proxy is:125.111.171.158:8118
+2016-08-01 18:35:24 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2016-08-01 18:35:28 [scrapy] DEBUG: Crawled (200) <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=buildingsupplies> (referer: None) ['partial']
+2016-08-01 18:35:28 [scrapy] INFO: *******current proxy is:45.115.173.94:80
+2016-08-01 18:35:28 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:35:28 [scrapy] DEBUG: Gave up retrying <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=media> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2016-08-01 18:35:28 [scrapy] INFO: *******current proxy is:47.90.15.123:80
+2016-08-01 18:35:28 [scrapy] INFO: Current UserAgent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2016-08-01 18:35:29 [scrapy] ERROR: Error downloading <GET http://www.yelp.com/search?find_loc=Aberdeen%2C+WA&cflt=media>: [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
